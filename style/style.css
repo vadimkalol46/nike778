@@ -1,0 +1,290 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+    max-width: 1140px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+body {
+    background: #ebebeb;
+}
+.header-nav {
+    background: #322e41;
+}
+
+.header-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-list {
+    display: flex;
+}
+
+.header-list-link {
+    font-family: "RR";
+    font-weight: 400;
+    font-size: 16px;
+    color: #fff;
+    padding: 22px;
+    display: block;
+    transition: 200ms;
+}
+
+.header-list-link:hover {
+    background: #fff;
+    color: #d47300;
+}
+
+.header-content {
+    background: url(../image/krossovka.jpg) no-repeat center /cover; 
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.header-content-title{
+    font-family: "RB";
+    font-weight: 700;
+    font-size: 50px;
+    color: #fff;
+}
+
+.header-cintent-text {
+    font-family: "RR";
+    font-weight: 400;
+    font-size: 18px;
+    text-align: center;
+    color: #fff;
+}
+
+.header-cintent-text span{
+font-family: "RB";
+color: #d47300;
+}
+
+.main-box-left {
+    max-width: 540px;
+    width: 100%;
+    background: #fff;
+    border-radius: 6px;
+    padding: 15px;
+}
+
+.main {
+    padding-bottom: 30px;
+    margin-top: -37px;
+}
+
+.main-box-left-title {
+    font-family: "RB";
+    font-weight: 700;
+    font-size: 22px;
+    color: #2c2a2a;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.main-box-left-text {
+    font-family: "RR";
+    font-weight: 400;
+    font-size: 16px;
+    color: #9b9b9b;
+}
+
+.main-box-right {
+    max-width: 540px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.main-box {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-box-item {
+    border-radius: 6px;
+    max-width: 255px;
+    width: 100%;
+    background: #fff;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.main-box-circle {
+    border: 2px solid #d47300;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    background: #fff;
+    display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.main-box-title {
+font-family: "RB";
+font-weight: 700;
+font-size: 22px;
+line-height: 100%;
+text-align: center;
+color: #2c2a2a;
+}
+
+.main-box-text {
+    font-family: "RR";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    text-align: center;
+    color: #9b9b9b;
+}
+
+.footer {
+    background: #322e41;
+    padding: 40px;
+}
+
+.footer-form {
+    max-width: 350px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer-form-input, 
+.footer-form-text {
+    border-radius: 6px;
+    background: #fff;
+    border: none;
+    outline: none;
+    padding: 9px 10px;
+}
+
+.footer-form-text {
+    height: 86px;
+    resize: none;
+}
+
+.footer-form-input::placeholder,
+.footer-form-text::placeholder{
+    font-family: "RR";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 112%;
+    color: #9b9b9b;
+}
+
+.footer-form-btn {
+    border-radius: 6px;
+    background: #544294;
+    font-family: "RR";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 112%;
+    text-align: center;
+    color: #fff;
+    outline: none;
+    border: none;
+    padding: 9px 0;
+}
+
+.footer-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-list-link {
+    display: flex;
+    flex-wrap: wrap;
+ justify-content: space-between;
+ gap: 10px;
+    max-width: 235px;
+    width: 100%;
+}
+
+.footer-list-link {
+    font-family: "RR";
+    font-weight: 400;
+    font-size: 16px;
+    color: #fff;
+    min-width: 85px;
+}
+
+.footer-list-link:hover {
+    color: orangered;
+}
+
+.footer-icons {
+    display: flex;
+    gap: 40px;
+}
+
+.main-box-left-img {
+    width: 100%;
+}
+
+@media (max-width:1140px) {
+    .main-box {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+}
+
+@media (max-width:900px) {
+    .footer-box {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .header-box {
+        flex-direction: column;
+        padding-top: 15px;
+    }
+    
+    .header-list {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+@media (max-width:600px) {
+    .header-content {
+        height: 375px;
+    }
+    
+    .main-box-item {
+        max-width: none;
+    }
+    .header-list-link {
+        padding: 8px;
+    }
+}
